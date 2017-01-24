@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE0E7D8D1E1AC1C900347CAA /* Food.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D891E1AC1C900347CAA /* Food.png */; };
+		AE0E7D8E1E1AC1C900347CAA /* Food.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D891E1AC1C900347CAA /* Food.png */; };
+		AE0E7D8F1E1AC1C900347CAA /* Food.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D891E1AC1C900347CAA /* Food.png */; };
+		AE0E7D901E1AC1C900347CAA /* Food@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D8A1E1AC1C900347CAA /* Food@2x.png */; };
+		AE0E7D911E1AC1C900347CAA /* Food@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D8A1E1AC1C900347CAA /* Food@2x.png */; };
+		AE0E7D921E1AC1C900347CAA /* Food@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D8A1E1AC1C900347CAA /* Food@2x.png */; };
+		AE0E7D931E1AC1C900347CAA /* FoodSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D8B1E1AC1C900347CAA /* FoodSelected.png */; };
+		AE0E7D941E1AC1C900347CAA /* FoodSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D8B1E1AC1C900347CAA /* FoodSelected.png */; };
+		AE0E7D951E1AC1C900347CAA /* FoodSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D8B1E1AC1C900347CAA /* FoodSelected.png */; };
+		AE0E7D961E1AC1C900347CAA /* FoodSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D8C1E1AC1C900347CAA /* FoodSelected@2x.png */; };
+		AE0E7D971E1AC1C900347CAA /* FoodSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D8C1E1AC1C900347CAA /* FoodSelected@2x.png */; };
+		AE0E7D981E1AC1C900347CAA /* FoodSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D8C1E1AC1C900347CAA /* FoodSelected@2x.png */; };
+		AE0E7DA11E1AC25E00347CAA /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D991E1AC25E00347CAA /* Calendar.png */; };
+		AE0E7DA21E1AC25E00347CAA /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D991E1AC25E00347CAA /* Calendar.png */; };
+		AE0E7DA31E1AC25E00347CAA /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D991E1AC25E00347CAA /* Calendar.png */; };
+		AE0E7DA41E1AC25E00347CAA /* Calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9A1E1AC25E00347CAA /* Calendar@2x.png */; };
+		AE0E7DA51E1AC25E00347CAA /* Calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9A1E1AC25E00347CAA /* Calendar@2x.png */; };
+		AE0E7DA61E1AC25E00347CAA /* Calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9A1E1AC25E00347CAA /* Calendar@2x.png */; };
+		AE0E7DA71E1AC25E00347CAA /* CalendarSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9B1E1AC25E00347CAA /* CalendarSelected.png */; };
+		AE0E7DA81E1AC25E00347CAA /* CalendarSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9B1E1AC25E00347CAA /* CalendarSelected.png */; };
+		AE0E7DA91E1AC25E00347CAA /* CalendarSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9B1E1AC25E00347CAA /* CalendarSelected.png */; };
+		AE0E7DAA1E1AC25E00347CAA /* CalendarSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9C1E1AC25E00347CAA /* CalendarSelected@2x.png */; };
+		AE0E7DAB1E1AC25E00347CAA /* CalendarSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9C1E1AC25E00347CAA /* CalendarSelected@2x.png */; };
+		AE0E7DAC1E1AC25E00347CAA /* CalendarSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9C1E1AC25E00347CAA /* CalendarSelected@2x.png */; };
+		AE0E7DAD1E1AC25E00347CAA /* Dumbbell.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9D1E1AC25E00347CAA /* Dumbbell.png */; };
+		AE0E7DAE1E1AC25E00347CAA /* Dumbbell.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9D1E1AC25E00347CAA /* Dumbbell.png */; };
+		AE0E7DAF1E1AC25E00347CAA /* Dumbbell.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9D1E1AC25E00347CAA /* Dumbbell.png */; };
+		AE0E7DB01E1AC25E00347CAA /* Dumbbell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9E1E1AC25E00347CAA /* Dumbbell@2x.png */; };
+		AE0E7DB11E1AC25E00347CAA /* Dumbbell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9E1E1AC25E00347CAA /* Dumbbell@2x.png */; };
+		AE0E7DB21E1AC25E00347CAA /* Dumbbell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9E1E1AC25E00347CAA /* Dumbbell@2x.png */; };
+		AE0E7DB31E1AC25E00347CAA /* DumbbellSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9F1E1AC25E00347CAA /* DumbbellSelected.png */; };
+		AE0E7DB41E1AC25E00347CAA /* DumbbellSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9F1E1AC25E00347CAA /* DumbbellSelected.png */; };
+		AE0E7DB51E1AC25E00347CAA /* DumbbellSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D9F1E1AC25E00347CAA /* DumbbellSelected.png */; };
+		AE0E7DB61E1AC25E00347CAA /* DumbbellSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7DA01E1AC25E00347CAA /* DumbbellSelected@2x.png */; };
+		AE0E7DB71E1AC25E00347CAA /* DumbbellSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7DA01E1AC25E00347CAA /* DumbbellSelected@2x.png */; };
+		AE0E7DB81E1AC25E00347CAA /* DumbbellSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7DA01E1AC25E00347CAA /* DumbbellSelected@2x.png */; };
+		AE0E7DBA1E1AC2D900347CAA /* FoodTrackerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0E7DB91E1AC2D900347CAA /* FoodTrackerCollectionViewController.swift */; };
+		AE0E7DBB1E1AC2D900347CAA /* FoodTrackerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0E7DB91E1AC2D900347CAA /* FoodTrackerCollectionViewController.swift */; };
+		AE0E7DBC1E1AC2D900347CAA /* FoodTrackerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0E7DB91E1AC2D900347CAA /* FoodTrackerCollectionViewController.swift */; };
+		AE0E7DBF1E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0E7DBD1E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift */; };
+		AE0E7DC01E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0E7DBD1E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift */; };
+		AE0E7DC11E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0E7DBD1E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift */; };
+		AE0E7DC21E1AC34A00347CAA /* FoodTrackerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7DBE1E1AC34A00347CAA /* FoodTrackerCollectionViewCell.xib */; };
+		AE0E7DC31E1AC34A00347CAA /* FoodTrackerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7DBE1E1AC34A00347CAA /* FoodTrackerCollectionViewCell.xib */; };
+		AE0E7DC41E1AC34A00347CAA /* FoodTrackerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7DBE1E1AC34A00347CAA /* FoodTrackerCollectionViewCell.xib */; };
+		AE43422F1E0ED8C2000BAD5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43422E1E0ED8C2000BAD5F /* AppDelegate.swift */; };
+		AE4342371E0ED8C2000BAD5F /* HealthyLifestyleTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE4342351E0ED8C2000BAD5F /* HealthyLifestyleTracker.xcdatamodeld */; };
+		AE4342391E0ED8C2000BAD5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4342381E0ED8C2000BAD5F /* Assets.xcassets */; };
+		AE4342471E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4342461E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests.swift */; };
+		AE4342521E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4342511E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.swift */; };
+		AE6C00ED1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C00EC1E369FA800B3F85A /* FoodTrackerLayout.swift */; };
+		AE6C00EE1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C00EC1E369FA800B3F85A /* FoodTrackerLayout.swift */; };
+		AE6C00EF1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C00EC1E369FA800B3F85A /* FoodTrackerLayout.swift */; };
+		AE9D30191E102F2000E4AE1D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9D30171E102F2000E4AE1D /* TabBarViewController.swift */; };
+		AE9D301A1E102F2000E4AE1D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9D30171E102F2000E4AE1D /* TabBarViewController.swift */; };
+		AE9D301B1E102F2000E4AE1D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9D30171E102F2000E4AE1D /* TabBarViewController.swift */; };
+		AE9D30211E10307500E4AE1D /* FoodTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9D301F1E10307500E4AE1D /* FoodTrackerViewController.swift */; };
+		AE9D30221E10307500E4AE1D /* FoodTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9D301F1E10307500E4AE1D /* FoodTrackerViewController.swift */; };
+		AE9D30231E10307500E4AE1D /* FoodTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9D301F1E10307500E4AE1D /* FoodTrackerViewController.swift */; };
+		AE9D30241E10307500E4AE1D /* FoodTrackerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9D30201E10307500E4AE1D /* FoodTrackerViewController.xib */; };
+		AE9D30251E10307500E4AE1D /* FoodTrackerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9D30201E10307500E4AE1D /* FoodTrackerViewController.xib */; };
+		AE9D30261E10307500E4AE1D /* FoodTrackerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9D30201E10307500E4AE1D /* FoodTrackerViewController.xib */; };
+		AEB808E61E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB808E41E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift */; };
+		AEB808E71E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB808E41E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift */; };
+		AEB808E81E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB808E41E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift */; };
+		AEB808E91E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEB808E51E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.xib */; };
+		AEB808EA1E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEB808E51E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.xib */; };
+		AEB808EB1E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEB808E51E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.xib */; };
+		AED90BA51E3125BF00882C4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43422E1E0ED8C2000BAD5F /* AppDelegate.swift */; };
+		AED90BA61E3125C000882C4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43422E1E0ED8C2000BAD5F /* AppDelegate.swift */; };
+		AED90BAA1E3141F100882C4A /* FoodTrackerSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED90BA81E3141F100882C4A /* FoodTrackerSetupViewController.swift */; };
+		AED90BAB1E3141F100882C4A /* FoodTrackerSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED90BA81E3141F100882C4A /* FoodTrackerSetupViewController.swift */; };
+		AED90BAC1E3141F100882C4A /* FoodTrackerSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED90BA81E3141F100882C4A /* FoodTrackerSetupViewController.swift */; };
+		AED90BAD1E3141F100882C4A /* FoodTrackerSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AED90BA91E3141F100882C4A /* FoodTrackerSetupViewController.xib */; };
+		AED90BAE1E3141F100882C4A /* FoodTrackerSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AED90BA91E3141F100882C4A /* FoodTrackerSetupViewController.xib */; };
+		AED90BAF1E3141F100882C4A /* FoodTrackerSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AED90BA91E3141F100882C4A /* FoodTrackerSetupViewController.xib */; };
+		AEE1DA401E1194EE00044961 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1DA3E1E1194EE00044961 /* WorkoutsViewController.swift */; };
+		AEE1DA411E1194EE00044961 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1DA3E1E1194EE00044961 /* WorkoutsViewController.swift */; };
+		AEE1DA421E1194EE00044961 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1DA3E1E1194EE00044961 /* WorkoutsViewController.swift */; };
+		AEE1DA431E1194EE00044961 /* WorkoutsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE1DA3F1E1194EE00044961 /* WorkoutsViewController.xib */; };
+		AEE1DA441E1194EE00044961 /* WorkoutsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE1DA3F1E1194EE00044961 /* WorkoutsViewController.xib */; };
+		AEE1DA451E1194EE00044961 /* WorkoutsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE1DA3F1E1194EE00044961 /* WorkoutsViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE4342431E0ED8C3000BAD5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4342231E0ED8C2000BAD5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE43422A1E0ED8C2000BAD5F;
+			remoteInfo = HealthyLifestyleTracker;
+		};
+		AE43424E1E0ED8C3000BAD5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4342231E0ED8C2000BAD5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE43422A1E0ED8C2000BAD5F;
+			remoteInfo = HealthyLifestyleTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE0E7D891E1AC1C900347CAA /* Food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Food.png; sourceTree = "<group>"; };
+		AE0E7D8A1E1AC1C900347CAA /* Food@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Food@2x.png"; sourceTree = "<group>"; };
+		AE0E7D8B1E1AC1C900347CAA /* FoodSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FoodSelected.png; sourceTree = "<group>"; };
+		AE0E7D8C1E1AC1C900347CAA /* FoodSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FoodSelected@2x.png"; sourceTree = "<group>"; };
+		AE0E7D991E1AC25E00347CAA /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
+		AE0E7D9A1E1AC25E00347CAA /* Calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar@2x.png"; sourceTree = "<group>"; };
+		AE0E7D9B1E1AC25E00347CAA /* CalendarSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalendarSelected.png; sourceTree = "<group>"; };
+		AE0E7D9C1E1AC25E00347CAA /* CalendarSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CalendarSelected@2x.png"; sourceTree = "<group>"; };
+		AE0E7D9D1E1AC25E00347CAA /* Dumbbell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dumbbell.png; sourceTree = "<group>"; };
+		AE0E7D9E1E1AC25E00347CAA /* Dumbbell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dumbbell@2x.png"; sourceTree = "<group>"; };
+		AE0E7D9F1E1AC25E00347CAA /* DumbbellSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DumbbellSelected.png; sourceTree = "<group>"; };
+		AE0E7DA01E1AC25E00347CAA /* DumbbellSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DumbbellSelected@2x.png"; sourceTree = "<group>"; };
+		AE0E7DB91E1AC2D900347CAA /* FoodTrackerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTrackerCollectionViewController.swift; sourceTree = "<group>"; };
+		AE0E7DBD1E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTrackerCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE0E7DBE1E1AC34A00347CAA /* FoodTrackerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTrackerCollectionViewCell.xib; sourceTree = "<group>"; };
+		AE43422B1E0ED8C2000BAD5F /* HealthyLifestyleTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyLifestyleTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE43422E1E0ED8C2000BAD5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE4342361E0ED8C2000BAD5F /* HealthyLifestyleTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthyLifestyleTracker.xcdatamodel; sourceTree = "<group>"; };
+		AE4342381E0ED8C2000BAD5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE43423D1E0ED8C2000BAD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE4342421E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthyLifestyleTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4342461E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyLifestyleTrackerTests.swift; sourceTree = "<group>"; };
+		AE4342481E0ED8C3000BAD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE43424D1E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthyLifestyleTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4342511E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyLifestyleTrackerUITests.swift; sourceTree = "<group>"; };
+		AE4342531E0ED8C3000BAD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE6C00EC1E369FA800B3F85A /* FoodTrackerLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTrackerLayout.swift; sourceTree = "<group>"; };
+		AE9D30171E102F2000E4AE1D /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		AE9D301F1E10307500E4AE1D /* FoodTrackerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTrackerViewController.swift; sourceTree = "<group>"; };
+		AE9D30201E10307500E4AE1D /* FoodTrackerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTrackerViewController.xib; sourceTree = "<group>"; };
+		AEB808E41E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTrackerHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		AEB808E51E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTrackerHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		AED90BA81E3141F100882C4A /* FoodTrackerSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTrackerSetupViewController.swift; sourceTree = "<group>"; };
+		AED90BA91E3141F100882C4A /* FoodTrackerSetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTrackerSetupViewController.xib; sourceTree = "<group>"; };
+		AEE1DA3E1E1194EE00044961 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
+		AEE1DA3F1E1194EE00044961 /* WorkoutsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkoutsViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE4342281E0ED8C2000BAD5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE43423F1E0ED8C3000BAD5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE43424A1E0ED8C3000BAD5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE4342221E0ED8C2000BAD5F = {
+			isa = PBXGroup;
+			children = (
+				AE4342671E0EDBBE000BAD5F /* Images */,
+				AE43422D1E0ED8C2000BAD5F /* HealthyLifestyleTracker */,
+				AE4342451E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests */,
+				AE4342501E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests */,
+				AE43422C1E0ED8C2000BAD5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE43422C1E0ED8C2000BAD5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE43422B1E0ED8C2000BAD5F /* HealthyLifestyleTracker.app */,
+				AE4342421E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests.xctest */,
+				AE43424D1E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE43422D1E0ED8C2000BAD5F /* HealthyLifestyleTracker */ = {
+			isa = PBXGroup;
+			children = (
+				AED90BA71E3141D100882C4A /* FoodTracker */,
+				AE43422E1E0ED8C2000BAD5F /* AppDelegate.swift */,
+				AE4342381E0ED8C2000BAD5F /* Assets.xcassets */,
+				AE43423D1E0ED8C2000BAD5F /* Info.plist */,
+				AE4342351E0ED8C2000BAD5F /* HealthyLifestyleTracker.xcdatamodeld */,
+				AE9D30171E102F2000E4AE1D /* TabBarViewController.swift */,
+				AEE1DA3E1E1194EE00044961 /* WorkoutsViewController.swift */,
+				AEE1DA3F1E1194EE00044961 /* WorkoutsViewController.xib */,
+			);
+			path = HealthyLifestyleTracker;
+			sourceTree = "<group>";
+		};
+		AE4342451E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE4342461E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests.swift */,
+				AE4342481E0ED8C3000BAD5F /* Info.plist */,
+			);
+			path = HealthyLifestyleTrackerTests;
+			sourceTree = "<group>";
+		};
+		AE4342501E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE4342511E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.swift */,
+				AE4342531E0ED8C3000BAD5F /* Info.plist */,
+			);
+			path = HealthyLifestyleTrackerUITests;
+			sourceTree = "<group>";
+		};
+		AE4342671E0EDBBE000BAD5F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AE0E7D891E1AC1C900347CAA /* Food.png */,
+				AE0E7D8A1E1AC1C900347CAA /* Food@2x.png */,
+				AE0E7D8B1E1AC1C900347CAA /* FoodSelected.png */,
+				AE0E7D8C1E1AC1C900347CAA /* FoodSelected@2x.png */,
+				AE0E7D991E1AC25E00347CAA /* Calendar.png */,
+				AE0E7D9A1E1AC25E00347CAA /* Calendar@2x.png */,
+				AE0E7D9B1E1AC25E00347CAA /* CalendarSelected.png */,
+				AE0E7D9C1E1AC25E00347CAA /* CalendarSelected@2x.png */,
+				AE0E7D9D1E1AC25E00347CAA /* Dumbbell.png */,
+				AE0E7D9E1E1AC25E00347CAA /* Dumbbell@2x.png */,
+				AE0E7D9F1E1AC25E00347CAA /* DumbbellSelected.png */,
+				AE0E7DA01E1AC25E00347CAA /* DumbbellSelected@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		AED90B9E1E31186000882C4A /* FoodTrackerCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				AE0E7DB91E1AC2D900347CAA /* FoodTrackerCollectionViewController.swift */,
+				AE0E7DBD1E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift */,
+				AE0E7DBE1E1AC34A00347CAA /* FoodTrackerCollectionViewCell.xib */,
+				AEB808E41E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift */,
+				AEB808E51E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.xib */,
+				AE6C00EC1E369FA800B3F85A /* FoodTrackerLayout.swift */,
+			);
+			name = FoodTrackerCollectionView;
+			sourceTree = "<group>";
+		};
+		AED90BA71E3141D100882C4A /* FoodTracker */ = {
+			isa = PBXGroup;
+			children = (
+				AED90B9E1E31186000882C4A /* FoodTrackerCollectionView */,
+				AE9D301F1E10307500E4AE1D /* FoodTrackerViewController.swift */,
+				AE9D30201E10307500E4AE1D /* FoodTrackerViewController.xib */,
+				AED90BA81E3141F100882C4A /* FoodTrackerSetupViewController.swift */,
+				AED90BA91E3141F100882C4A /* FoodTrackerSetupViewController.xib */,
+			);
+			name = FoodTracker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE43422A1E0ED8C2000BAD5F /* HealthyLifestyleTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4342561E0ED8C3000BAD5F /* Build configuration list for PBXNativeTarget "HealthyLifestyleTracker" */;
+			buildPhases = (
+				AE4342271E0ED8C2000BAD5F /* Sources */,
+				AE4342281E0ED8C2000BAD5F /* Frameworks */,
+				AE4342291E0ED8C2000BAD5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthyLifestyleTracker;
+			productName = HealthyLifestyleTracker;
+			productReference = AE43422B1E0ED8C2000BAD5F /* HealthyLifestyleTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE4342411E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4342591E0ED8C3000BAD5F /* Build configuration list for PBXNativeTarget "HealthyLifestyleTrackerTests" */;
+			buildPhases = (
+				AE43423E1E0ED8C3000BAD5F /* Sources */,
+				AE43423F1E0ED8C3000BAD5F /* Frameworks */,
+				AE4342401E0ED8C3000BAD5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE4342441E0ED8C3000BAD5F /* PBXTargetDependency */,
+			);
+			name = HealthyLifestyleTrackerTests;
+			productName = HealthyLifestyleTrackerTests;
+			productReference = AE4342421E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE43424C1E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE43425C1E0ED8C3000BAD5F /* Build configuration list for PBXNativeTarget "HealthyLifestyleTrackerUITests" */;
+			buildPhases = (
+				AE4342491E0ED8C3000BAD5F /* Sources */,
+				AE43424A1E0ED8C3000BAD5F /* Frameworks */,
+				AE43424B1E0ED8C3000BAD5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE43424F1E0ED8C3000BAD5F /* PBXTargetDependency */,
+			);
+			name = HealthyLifestyleTrackerUITests;
+			productName = HealthyLifestyleTrackerUITests;
+			productReference = AE43424D1E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE4342231E0ED8C2000BAD5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Eric Rose";
+				TargetAttributes = {
+					AE43422A1E0ED8C2000BAD5F = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 44TU5FM735;
+						ProvisioningStyle = Automatic;
+					};
+					AE4342411E0ED8C3000BAD5F = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AE43422A1E0ED8C2000BAD5F;
+					};
+					AE43424C1E0ED8C3000BAD5F = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AE43422A1E0ED8C2000BAD5F;
+					};
+				};
+			};
+			buildConfigurationList = AE4342261E0ED8C2000BAD5F /* Build configuration list for PBXProject "HealthyLifestyleTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE4342221E0ED8C2000BAD5F;
+			productRefGroup = AE43422C1E0ED8C2000BAD5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE43422A1E0ED8C2000BAD5F /* HealthyLifestyleTracker */,
+				AE4342411E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests */,
+				AE43424C1E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE4342291E0ED8C2000BAD5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE9D30241E10307500E4AE1D /* FoodTrackerViewController.xib in Resources */,
+				AE0E7DB61E1AC25E00347CAA /* DumbbellSelected@2x.png in Resources */,
+				AE0E7DA11E1AC25E00347CAA /* Calendar.png in Resources */,
+				AEB808E91E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.xib in Resources */,
+				AE0E7D961E1AC1C900347CAA /* FoodSelected@2x.png in Resources */,
+				AE0E7D931E1AC1C900347CAA /* FoodSelected.png in Resources */,
+				AE0E7DAA1E1AC25E00347CAA /* CalendarSelected@2x.png in Resources */,
+				AE0E7DA71E1AC25E00347CAA /* CalendarSelected.png in Resources */,
+				AE0E7DC21E1AC34A00347CAA /* FoodTrackerCollectionViewCell.xib in Resources */,
+				AE0E7DAD1E1AC25E00347CAA /* Dumbbell.png in Resources */,
+				AE0E7DA41E1AC25E00347CAA /* Calendar@2x.png in Resources */,
+				AE0E7DB01E1AC25E00347CAA /* Dumbbell@2x.png in Resources */,
+				AE0E7D8D1E1AC1C900347CAA /* Food.png in Resources */,
+				AED90BAD1E3141F100882C4A /* FoodTrackerSetupViewController.xib in Resources */,
+				AEE1DA431E1194EE00044961 /* WorkoutsViewController.xib in Resources */,
+				AE0E7DB31E1AC25E00347CAA /* DumbbellSelected.png in Resources */,
+				AE4342391E0ED8C2000BAD5F /* Assets.xcassets in Resources */,
+				AE0E7D901E1AC1C900347CAA /* Food@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4342401E0ED8C3000BAD5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0E7D941E1AC1C900347CAA /* FoodSelected.png in Resources */,
+				AE0E7D8E1E1AC1C900347CAA /* Food.png in Resources */,
+				AEE1DA441E1194EE00044961 /* WorkoutsViewController.xib in Resources */,
+				AED90BAE1E3141F100882C4A /* FoodTrackerSetupViewController.xib in Resources */,
+				AEB808EA1E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.xib in Resources */,
+				AE0E7D911E1AC1C900347CAA /* Food@2x.png in Resources */,
+				AE9D30251E10307500E4AE1D /* FoodTrackerViewController.xib in Resources */,
+				AE0E7D971E1AC1C900347CAA /* FoodSelected@2x.png in Resources */,
+				AE0E7DC31E1AC34A00347CAA /* FoodTrackerCollectionViewCell.xib in Resources */,
+				AE0E7DAE1E1AC25E00347CAA /* Dumbbell.png in Resources */,
+				AE0E7DB11E1AC25E00347CAA /* Dumbbell@2x.png in Resources */,
+				AE0E7DB71E1AC25E00347CAA /* DumbbellSelected@2x.png in Resources */,
+				AE0E7DA51E1AC25E00347CAA /* Calendar@2x.png in Resources */,
+				AE0E7DA81E1AC25E00347CAA /* CalendarSelected.png in Resources */,
+				AE0E7DA21E1AC25E00347CAA /* Calendar.png in Resources */,
+				AE0E7DB41E1AC25E00347CAA /* DumbbellSelected.png in Resources */,
+				AE0E7DAB1E1AC25E00347CAA /* CalendarSelected@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE43424B1E0ED8C3000BAD5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0E7D951E1AC1C900347CAA /* FoodSelected.png in Resources */,
+				AE0E7D8F1E1AC1C900347CAA /* Food.png in Resources */,
+				AEE1DA451E1194EE00044961 /* WorkoutsViewController.xib in Resources */,
+				AED90BAF1E3141F100882C4A /* FoodTrackerSetupViewController.xib in Resources */,
+				AEB808EB1E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.xib in Resources */,
+				AE0E7D921E1AC1C900347CAA /* Food@2x.png in Resources */,
+				AE9D30261E10307500E4AE1D /* FoodTrackerViewController.xib in Resources */,
+				AE0E7D981E1AC1C900347CAA /* FoodSelected@2x.png in Resources */,
+				AE0E7DC41E1AC34A00347CAA /* FoodTrackerCollectionViewCell.xib in Resources */,
+				AE0E7DAF1E1AC25E00347CAA /* Dumbbell.png in Resources */,
+				AE0E7DB21E1AC25E00347CAA /* Dumbbell@2x.png in Resources */,
+				AE0E7DB81E1AC25E00347CAA /* DumbbellSelected@2x.png in Resources */,
+				AE0E7DA61E1AC25E00347CAA /* Calendar@2x.png in Resources */,
+				AE0E7DA91E1AC25E00347CAA /* CalendarSelected.png in Resources */,
+				AE0E7DA31E1AC25E00347CAA /* Calendar.png in Resources */,
+				AE0E7DB51E1AC25E00347CAA /* DumbbellSelected.png in Resources */,
+				AE0E7DAC1E1AC25E00347CAA /* CalendarSelected@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE4342271E0ED8C2000BAD5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE9D30191E102F2000E4AE1D /* TabBarViewController.swift in Sources */,
+				AEE1DA401E1194EE00044961 /* WorkoutsViewController.swift in Sources */,
+				AE0E7DBF1E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift in Sources */,
+				AED90BAA1E3141F100882C4A /* FoodTrackerSetupViewController.swift in Sources */,
+				AE6C00ED1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */,
+				AE9D30211E10307500E4AE1D /* FoodTrackerViewController.swift in Sources */,
+				AE4342371E0ED8C2000BAD5F /* HealthyLifestyleTracker.xcdatamodeld in Sources */,
+				AEB808E61E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift in Sources */,
+				AE43422F1E0ED8C2000BAD5F /* AppDelegate.swift in Sources */,
+				AE0E7DBA1E1AC2D900347CAA /* FoodTrackerCollectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE43423E1E0ED8C3000BAD5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0E7DBB1E1AC2D900347CAA /* FoodTrackerCollectionViewController.swift in Sources */,
+				AEE1DA411E1194EE00044961 /* WorkoutsViewController.swift in Sources */,
+				AE4342471E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests.swift in Sources */,
+				AED90BAB1E3141F100882C4A /* FoodTrackerSetupViewController.swift in Sources */,
+				AE6C00EE1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */,
+				AE0E7DC01E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift in Sources */,
+				AED90BA51E3125BF00882C4A /* AppDelegate.swift in Sources */,
+				AEB808E71E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift in Sources */,
+				AE9D301A1E102F2000E4AE1D /* TabBarViewController.swift in Sources */,
+				AE9D30221E10307500E4AE1D /* FoodTrackerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4342491E0ED8C3000BAD5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0E7DBC1E1AC2D900347CAA /* FoodTrackerCollectionViewController.swift in Sources */,
+				AEE1DA421E1194EE00044961 /* WorkoutsViewController.swift in Sources */,
+				AE4342521E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.swift in Sources */,
+				AED90BAC1E3141F100882C4A /* FoodTrackerSetupViewController.swift in Sources */,
+				AE6C00EF1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */,
+				AE0E7DC11E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift in Sources */,
+				AED90BA61E3125C000882C4A /* AppDelegate.swift in Sources */,
+				AEB808E81E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift in Sources */,
+				AE9D301B1E102F2000E4AE1D /* TabBarViewController.swift in Sources */,
+				AE9D30231E10307500E4AE1D /* FoodTrackerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE4342441E0ED8C3000BAD5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE43422A1E0ED8C2000BAD5F /* HealthyLifestyleTracker */;
+			targetProxy = AE4342431E0ED8C3000BAD5F /* PBXContainerItemProxy */;
+		};
+		AE43424F1E0ED8C3000BAD5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE43422A1E0ED8C2000BAD5F /* HealthyLifestyleTracker */;
+			targetProxy = AE43424E1E0ED8C3000BAD5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AE4342541E0ED8C3000BAD5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE4342551E0ED8C3000BAD5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE4342571E0ED8C3000BAD5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44TU5FM735;
+				INFOPLIST_FILE = HealthyLifestyleTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericrose.HealthyLifestyleTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AE4342581E0ED8C3000BAD5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44TU5FM735;
+				INFOPLIST_FILE = HealthyLifestyleTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericrose.HealthyLifestyleTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AE43425A1E0ED8C3000BAD5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HealthyLifestyleTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericrose.HealthyLifestyleTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthyLifestyleTracker.app/HealthyLifestyleTracker";
+			};
+			name = Debug;
+		};
+		AE43425B1E0ED8C3000BAD5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HealthyLifestyleTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericrose.HealthyLifestyleTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthyLifestyleTracker.app/HealthyLifestyleTracker";
+			};
+			name = Release;
+		};
+		AE43425D1E0ED8C3000BAD5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HealthyLifestyleTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericrose.HealthyLifestyleTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HealthyLifestyleTracker;
+			};
+			name = Debug;
+		};
+		AE43425E1E0ED8C3000BAD5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HealthyLifestyleTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericrose.HealthyLifestyleTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HealthyLifestyleTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE4342261E0ED8C2000BAD5F /* Build configuration list for PBXProject "HealthyLifestyleTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4342541E0ED8C3000BAD5F /* Debug */,
+				AE4342551E0ED8C3000BAD5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE4342561E0ED8C3000BAD5F /* Build configuration list for PBXNativeTarget "HealthyLifestyleTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4342571E0ED8C3000BAD5F /* Debug */,
+				AE4342581E0ED8C3000BAD5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE4342591E0ED8C3000BAD5F /* Build configuration list for PBXNativeTarget "HealthyLifestyleTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE43425A1E0ED8C3000BAD5F /* Debug */,
+				AE43425B1E0ED8C3000BAD5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE43425C1E0ED8C3000BAD5F /* Build configuration list for PBXNativeTarget "HealthyLifestyleTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE43425D1E0ED8C3000BAD5F /* Debug */,
+				AE43425E1E0ED8C3000BAD5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AE4342351E0ED8C2000BAD5F /* HealthyLifestyleTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE4342361E0ED8C2000BAD5F /* HealthyLifestyleTracker.xcdatamodel */,
+			);
+			currentVersion = AE4342361E0ED8C2000BAD5F /* HealthyLifestyleTracker.xcdatamodel */;
+			path = HealthyLifestyleTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AE4342231E0ED8C2000BAD5F /* Project object */;
+}
