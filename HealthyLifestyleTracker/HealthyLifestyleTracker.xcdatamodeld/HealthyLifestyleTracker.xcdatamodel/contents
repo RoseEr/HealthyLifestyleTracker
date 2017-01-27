@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="FoodTrackerCategory" representedClassName="FoodTrackerCategory" syncable="YES" codeGenerationType="class">
+        <attribute name="calorieValue" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="dailyGoal" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="helpText" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="maxValue" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -12,7 +13,7 @@
         <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FoodTrackerCategory" syncable="YES"/>
     </entity>
     <elements>
-        <element name="FoodTrackerCategory" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="FoodTrackerCategory" positionX="-63" positionY="-18" width="128" height="120"/>
         <element name="FoodTrackerEntry" positionX="-63" positionY="27" width="128" height="90"/>
     </elements>
 </model>

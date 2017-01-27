@@ -9,10 +9,10 @@
 import UIKit
 import CoreData
 
-class FoodTrackerViewController: UIViewController {
+class FoodTrackerViewController: UIViewController, FoodTrackerCollectionViewControllerDelegate {
     
-    let FOOD_TRACKER_CATEGORY: String = "FoodTrackerCategory"
     var collectionVC: FoodTrackerCollectionViewController?
+    var headerVC: FoodTrackerHeaderViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,19 +23,24 @@ class FoodTrackerViewController: UIViewController {
         flowLayout.itemSize = CGSize(width: (self.view.frame.size.width / 10) + 2.0, height: (self.view.frame.size.width / 10) + 2.0)
         flowLayout.minimumInteritemSpacing = 0.0
         
-        let foodTrackerData = fetchFoodTrackerData()
+        let categoryDataAccessor = CategoryDataAccessor()
+        let categories = categoryDataAccessor.retrieveCategories()
         
-        if (foodTrackerData.count == 0) {
+        if (categories.count == 0) {
             let setupVC = FoodTrackerSetupViewController(nibName: "FoodTrackerSetupViewController", bundle: nil)
             self.addChildViewController(setupVC)
             self.view.addSubview(setupVC.view)
         } else {
-            self.collectionVC = FoodTrackerCollectionViewController(collectionViewLayout: flowLayout, foodTrackerData: foodTrackerData)
+            self.headerVC = FoodTrackerHeaderViewController(nibName: nil, bundle: nil, categoryDataAccessor: categoryDataAccessor, entryDataAccessor: EntryDataAccessor(categoryDataAccessor: categoryDataAccessor))
+            self.addChildViewController(self.headerVC!)
+            self.view.addSubview((self.headerVC?.view!)!)
+            
+            self.collectionVC = FoodTrackerCollectionViewController(collectionViewLayout: flowLayout, categoryDataAccessor: categoryDataAccessor, delegate: self)
             self.addChildViewController(collectionVC!)
             self.view.addSubview((collectionVC?.collectionView!)!)
+            
             setupConstraints()
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,36 +48,25 @@ class FoodTrackerViewController: UIViewController {
         
     }
     
-    private func setupConstraints() {
-        self.collectionVC?.collectionView?.translatesAutoresizingMaskIntoConstraints = false
-        
-        let widthConstraint = NSLayoutConstraint(item: self.collectionVC!.collectionView!, attribute: .width, relatedBy: .equal, toItem: self.view, attribute: .width, multiplier: 1.0, constant: 0)
-        let heightConstraint = NSLayoutConstraint(item: self.collectionVC!.collectionView!, attribute: .height, relatedBy: .equal, toItem: self.view, attribute: .height, multiplier: 1.0, constant: 0)
-        let xConstraint = NSLayoutConstraint(item: self.collectionVC!.collectionView!, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
-        let yConstraint = NSLayoutConstraint(item: self.collectionVC!.collectionView!, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0)
-        
-        NSLayoutConstraint.activate([widthConstraint, heightConstraint, xConstraint, yConstraint])
-        
+    func didRefreshData() {
+        self.headerVC?.updateCalorieCount()
     }
     
-    func fetchFoodTrackerData() -> [NSManagedObject] {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return [NSManagedObject]()
-        }
+    private func setupConstraints() {
+        self.collectionVC?.collectionView?.translatesAutoresizingMaskIntoConstraints = false
+        self.headerVC?.view?.translatesAutoresizingMaskIntoConstraints = false
         
-        var returnData: [NSManagedObject] = [NSManagedObject]()
+        let collectionWidthConstraint = NSLayoutConstraint(item: self.collectionVC!.collectionView!, attribute: .width, relatedBy: .equal, toItem: self.view, attribute: .width, multiplier: 1.0, constant: 0)
+        let collectionHeightConstraint = NSLayoutConstraint(item: self.collectionVC!.collectionView!, attribute: .height, relatedBy: .equal, toItem: self.view, attribute: .height, multiplier: 1.0, constant: -80)
+        let collectionXConstraint = NSLayoutConstraint(item: self.collectionVC!.collectionView!, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
+        let collectionYConstraint = NSLayoutConstraint(item: self.collectionVC!.collectionView!, attribute: .top, relatedBy: .equal, toItem: self.headerVC!.view!, attribute: .bottom, multiplier: 1, constant: 0)
         
-        let managedContext = appDelegate.persistentContainer.viewContext
+        let headerWidthConstraint = NSLayoutConstraint(item: self.headerVC!.view!, attribute: .width, relatedBy: .equal, toItem: self.view, attribute: .width, multiplier: 1.0, constant: 0)
+        let headerHeightConstraint = NSLayoutConstraint(item: self.headerVC!.view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 80)
+        let headerXConstraint = NSLayoutConstraint(item: self.headerVC!.view!, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
+        let headerYConstraint = NSLayoutConstraint(item: self.headerVC!.view!, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1, constant: 0)
         
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: FOOD_TRACKER_CATEGORY)
+        NSLayoutConstraint.activate([collectionWidthConstraint, collectionHeightConstraint, collectionXConstraint, collectionYConstraint, headerWidthConstraint, headerHeightConstraint, headerXConstraint, headerYConstraint])
         
-        do {
-            let results = try managedContext.fetch(fetchRequest)
-            returnData = results as! [NSManagedObject]
-        } catch let error as NSError {
-            print("Could not fetch \(error), \(error.userInfo)")
-        }
-        
-        return returnData
     }
 }

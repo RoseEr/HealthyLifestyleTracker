@@ -206,7 +206,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="Set Goals"/>
                     <connections>
-                        <action selector="setGoalsPressed:" destination="-1" eventType="touchUpInside" id="zMX-2Q-8Hx"/>
+                        <action selector="Pressed:" destination="-1" eventType="touchUpInside" id="QeH-kw-QiA"/>
                     </connections>
                 </button>
             </subviews>

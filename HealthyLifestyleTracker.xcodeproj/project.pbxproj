@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE07A8C11E39310300FD063C /* EntryDataAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE07A8C01E39310300FD063C /* EntryDataAccessor.swift */; };
+		AE07A8C21E39310300FD063C /* EntryDataAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE07A8C01E39310300FD063C /* EntryDataAccessor.swift */; };
+		AE07A8C31E39310300FD063C /* EntryDataAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE07A8C01E39310300FD063C /* EntryDataAccessor.swift */; };
+		AE07A8C51E39314600FD063C /* CategoryDataAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE07A8C41E39314600FD063C /* CategoryDataAccessor.swift */; };
+		AE07A8C61E39314600FD063C /* CategoryDataAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE07A8C41E39314600FD063C /* CategoryDataAccessor.swift */; };
+		AE07A8C71E39314600FD063C /* CategoryDataAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE07A8C41E39314600FD063C /* CategoryDataAccessor.swift */; };
 		AE0E7D8D1E1AC1C900347CAA /* Food.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D891E1AC1C900347CAA /* Food.png */; };
 		AE0E7D8E1E1AC1C900347CAA /* Food.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D891E1AC1C900347CAA /* Food.png */; };
 		AE0E7D8F1E1AC1C900347CAA /* Food.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E7D891E1AC1C900347CAA /* Food.png */; };
@@ -57,6 +63,9 @@
 		AE4342391E0ED8C2000BAD5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4342381E0ED8C2000BAD5F /* Assets.xcassets */; };
 		AE4342471E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4342461E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests.swift */; };
 		AE4342521E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4342511E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.swift */; };
+		AE697B021E3BA491008733A4 /* FoodTrackerHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE697B011E3BA491008733A4 /* FoodTrackerHeaderViewController.swift */; };
+		AE697B031E3BA491008733A4 /* FoodTrackerHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE697B011E3BA491008733A4 /* FoodTrackerHeaderViewController.swift */; };
+		AE697B041E3BA491008733A4 /* FoodTrackerHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE697B011E3BA491008733A4 /* FoodTrackerHeaderViewController.swift */; };
 		AE6C00ED1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C00EC1E369FA800B3F85A /* FoodTrackerLayout.swift */; };
 		AE6C00EE1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C00EC1E369FA800B3F85A /* FoodTrackerLayout.swift */; };
 		AE6C00EF1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C00EC1E369FA800B3F85A /* FoodTrackerLayout.swift */; };
@@ -109,6 +118,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE07A8C01E39310300FD063C /* EntryDataAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryDataAccessor.swift; sourceTree = "<group>"; };
+		AE07A8C41E39314600FD063C /* CategoryDataAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDataAccessor.swift; sourceTree = "<group>"; };
 		AE0E7D891E1AC1C900347CAA /* Food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Food.png; sourceTree = "<group>"; };
 		AE0E7D8A1E1AC1C900347CAA /* Food@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Food@2x.png"; sourceTree = "<group>"; };
 		AE0E7D8B1E1AC1C900347CAA /* FoodSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FoodSelected.png; sourceTree = "<group>"; };
@@ -135,6 +146,7 @@
 		AE43424D1E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthyLifestyleTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4342511E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyLifestyleTrackerUITests.swift; sourceTree = "<group>"; };
 		AE4342531E0ED8C3000BAD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE697B011E3BA491008733A4 /* FoodTrackerHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTrackerHeaderViewController.swift; sourceTree = "<group>"; };
 		AE6C00EC1E369FA800B3F85A /* FoodTrackerLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTrackerLayout.swift; sourceTree = "<group>"; };
 		AE9D30171E102F2000E4AE1D /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		AE9D301F1E10307500E4AE1D /* FoodTrackerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTrackerViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +216,8 @@
 				AE9D30171E102F2000E4AE1D /* TabBarViewController.swift */,
 				AEE1DA3E1E1194EE00044961 /* WorkoutsViewController.swift */,
 				AEE1DA3F1E1194EE00044961 /* WorkoutsViewController.xib */,
+				AE07A8C01E39310300FD063C /* EntryDataAccessor.swift */,
+				AE07A8C41E39314600FD063C /* CategoryDataAccessor.swift */,
 			);
 			path = HealthyLifestyleTracker;
 			sourceTree = "<group>";
@@ -266,6 +280,7 @@
 				AE9D30201E10307500E4AE1D /* FoodTrackerViewController.xib */,
 				AED90BA81E3141F100882C4A /* FoodTrackerSetupViewController.swift */,
 				AED90BA91E3141F100882C4A /* FoodTrackerSetupViewController.xib */,
+				AE697B011E3BA491008733A4 /* FoodTrackerHeaderViewController.swift */,
 			);
 			name = FoodTracker;
 			sourceTree = "<group>";
@@ -460,8 +475,11 @@
 				AED90BAA1E3141F100882C4A /* FoodTrackerSetupViewController.swift in Sources */,
 				AE6C00ED1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */,
 				AE9D30211E10307500E4AE1D /* FoodTrackerViewController.swift in Sources */,
+				AE697B021E3BA491008733A4 /* FoodTrackerHeaderViewController.swift in Sources */,
 				AE4342371E0ED8C2000BAD5F /* HealthyLifestyleTracker.xcdatamodeld in Sources */,
 				AEB808E61E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift in Sources */,
+				AE07A8C51E39314600FD063C /* CategoryDataAccessor.swift in Sources */,
+				AE07A8C11E39310300FD063C /* EntryDataAccessor.swift in Sources */,
 				AE43422F1E0ED8C2000BAD5F /* AppDelegate.swift in Sources */,
 				AE0E7DBA1E1AC2D900347CAA /* FoodTrackerCollectionViewController.swift in Sources */,
 			);
@@ -477,8 +495,11 @@
 				AED90BAB1E3141F100882C4A /* FoodTrackerSetupViewController.swift in Sources */,
 				AE6C00EE1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */,
 				AE0E7DC01E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift in Sources */,
+				AE697B031E3BA491008733A4 /* FoodTrackerHeaderViewController.swift in Sources */,
 				AED90BA51E3125BF00882C4A /* AppDelegate.swift in Sources */,
 				AEB808E71E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift in Sources */,
+				AE07A8C61E39314600FD063C /* CategoryDataAccessor.swift in Sources */,
+				AE07A8C21E39310300FD063C /* EntryDataAccessor.swift in Sources */,
 				AE9D301A1E102F2000E4AE1D /* TabBarViewController.swift in Sources */,
 				AE9D30221E10307500E4AE1D /* FoodTrackerViewController.swift in Sources */,
 			);
@@ -494,8 +515,11 @@
 				AED90BAC1E3141F100882C4A /* FoodTrackerSetupViewController.swift in Sources */,
 				AE6C00EF1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */,
 				AE0E7DC11E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift in Sources */,
+				AE697B041E3BA491008733A4 /* FoodTrackerHeaderViewController.swift in Sources */,
 				AED90BA61E3125C000882C4A /* AppDelegate.swift in Sources */,
 				AEB808E81E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift in Sources */,
+				AE07A8C71E39314600FD063C /* CategoryDataAccessor.swift in Sources */,
+				AE07A8C31E39310300FD063C /* EntryDataAccessor.swift in Sources */,
 				AE9D301B1E102F2000E4AE1D /* TabBarViewController.swift in Sources */,
 				AE9D30231E10307500E4AE1D /* FoodTrackerViewController.swift in Sources */,
 			);

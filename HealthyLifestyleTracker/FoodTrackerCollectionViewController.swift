@@ -11,21 +11,28 @@ import CoreData
 
 private let reuseIdentifier = "FoodTrackerCollectionViewCell"
 
+protocol FoodTrackerCollectionViewControllerDelegate: class {
+    func didRefreshData()
+}
+
 class FoodTrackerCollectionViewController: UICollectionViewController {
     
     let HEADER_VIEW: String = "HeaderView"
-    let FOOD_TRACKER_CATEGORY: String = "FoodTrackerCategory"
-    let FOOD_TRACKER_ENTRY: String = "FoodTrackerEntry"
 
-    var foodTrackerData : [NSManagedObject]
+    var categories : [Category]
+    var entryDataAccessor: EntryDataAccessor?
+    weak var delegate: FoodTrackerCollectionViewControllerDelegate?
     
-    init(collectionViewLayout: UICollectionViewLayout, foodTrackerData: [NSManagedObject]) {
-        self.foodTrackerData = foodTrackerData
+    init(collectionViewLayout: UICollectionViewLayout, categoryDataAccessor: CategoryDataAccessor, delegate: FoodTrackerCollectionViewControllerDelegate) {
+        self.categories = categoryDataAccessor.retrieveCategories()
+        self.entryDataAccessor = EntryDataAccessor(categoryDataAccessor: categoryDataAccessor)
+        self.delegate = delegate
+        
         super.init(collectionViewLayout: collectionViewLayout)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        foodTrackerData = [NSManagedObject]() 
+        self.categories = [Category]()
         
         super.init(coder: aDecoder)
     }
@@ -42,23 +49,23 @@ class FoodTrackerCollectionViewController: UICollectionViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return self.foodTrackerData.count
+        return self.categories.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        if(foodTrackerData.count > indexPath.section) {
-            let foodTrackerCategory = foodTrackerData[indexPath.section]
+        if(self.categories.count > indexPath.section) {
+            let category = self.categories[indexPath.section]
             
             switch kind {
             case UICollectionElementKindSectionHeader:
                 let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: HEADER_VIEW, for: indexPath) as! FoodTrackerHeaderCollectionReusableView
-                headerView.setLeftLabel(text: foodTrackerCategory.value(forKey: "name") as! String)
-                headerView.setRightLabel(text: foodTrackerCategory.value(forKey: "helpText") as! String)
+                headerView.setLeftLabel(text: category.name)
+                headerView.setRightLabel(text: category.helpText)
                 return headerView
             default:
                 assert(false, "Unexpected Element")
@@ -70,9 +77,9 @@ class FoodTrackerCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if (foodTrackerData.count > section) {
-            let foodTrackerCategory = foodTrackerData[section]
-            return foodTrackerCategory.value(forKey: "maxValue") as! Int
+        if (self.categories.count > section) {
+            let category = self.categories[section]
+            return category.maxValue
         }
         
         return 10
@@ -91,125 +98,43 @@ class FoodTrackerCollectionViewController: UICollectionViewController {
             cell.isLastItem = true
         }
         
-        if(foodTrackerData.count > indexPath.section) {
-            let foodTrackerCategory = foodTrackerData[indexPath.section]
+        if(self.categories.count > indexPath.section) {
+            let category = self.categories[indexPath.section]
             
-            if (indexPath.item == foodTrackerCategory.value(forKey: "dailyGoal") as! Int) {
-                cell.backgroundColor = UIColor.green
-            }
+            let entryForCurrentCategory = self.entryDataAccessor?.retrieveCurrentEntryForCategory(category: category)
             
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                return cell
-            }
-            
-            let managedContext = appDelegate.persistentContainer.viewContext
-            let entry = self.fetchCurrentEntryForCategory(named: foodTrackerCategory.value(forKey: "name") as! String, fromContext: managedContext)
-            let entryValue: Int = (entry.value(forKey: "value") as! NSNumber).intValue
-            
-            if (entryValue > indexPath.item) {
+            if ((entryForCurrentCategory?.value)! > indexPath.item) {
                 cell.backgroundColor = UIColor.darkGray
             } else {
                 cell.backgroundColor = UIColor.lightGray
             }
             
-            if (indexPath.item == (foodTrackerCategory.value(forKey: "dailyGoal") as! Int) - 1) {
+            if (indexPath.item == category.dailyGoal - 1) {
                 cell.backgroundColor = UIColor.green
             }
         }
-        
     
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if(foodTrackerData.count > indexPath.section) {
-            let foodTrackerCategory = foodTrackerData[indexPath.section]
+        if(self.categories.count > indexPath.section) {
+            let category = self.categories[indexPath.section]
+            let entryForCurrentCategory = self.entryDataAccessor?.retrieveCurrentEntryForCategory(category: category)
             
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                return
-            }
-            
-            let managedContext = appDelegate.persistentContainer.viewContext
-            
-            var entry: NSManagedObject = self.fetchCurrentEntryForCategory(named: foodTrackerCategory.value(forKey: "name") as! String, fromContext: managedContext)
-            let entryValue: Int = (entry.value(forKey: "value") as! NSNumber).intValue
-            
-            var newValue: Int = 0
-            
-            if (entryValue <= indexPath.item) {
-                newValue = entryValue + 1
+            if (entryForCurrentCategory!.value == 1 && indexPath.item == 0) {
+                self.entryDataAccessor?.updateValueForEntry(entry: entryForCurrentCategory!, newValue: 0)
             } else {
-                newValue = entryValue - 1
+                self.entryDataAccessor?.updateValueForEntry(entry: entryForCurrentCategory!, newValue: indexPath.item + 1)
             }
-            
-            entry.setValue(NSNumber(integerLiteral: newValue), forKey: "value")
-            
-            do {
-                try managedContext.save()
-            } catch _ as NSError {
-                sendAlert(message: "There was an error creating an entry for today.")
-            }
+        }
+        
+        if let delegate = self.delegate {
+            delegate.didRefreshData()
         }
         
         self.collectionView?.reloadData()
         
-    }
-    
-    private func fetchCurrentEntryForCategory(named categoryName: String, fromContext context:NSManagedObjectContext) -> NSManagedObject {
-        
-        let categoryFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: FOOD_TRACKER_CATEGORY)
-        categoryFetchRequest.predicate = NSPredicate(format: "name == %@", categoryName)
-        
-        var currentEntry: NSManagedObject = NSManagedObject()
-        
-        do {
-            let results = try context.fetch(categoryFetchRequest)
-            if (results.count > 0) {
-                let category = results[0] as! NSManagedObject
-                let currentEntryFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName:FOOD_TRACKER_ENTRY)
-                
-                let today = Date()
-                let formatter = DateFormatter()
-                formatter.dateFormat = "dd.mm.yyyy"
-                let resultDate = formatter.string(from: today)
-                
-                currentEntryFetchRequest.predicate = NSPredicate(format: "date == %@ AND category == %@", resultDate, category)
-                
-                let entryResults = try context.fetch(currentEntryFetchRequest)
-                if (entryResults.count > 0) {
-                    currentEntry = entryResults[0] as! NSManagedObject
-                } else {
-                    currentEntry = createNewEntryFor(category: category, inContext: context)
-                }
-            }
-        } catch let error as NSError {
-            print("Could not fetch \(error), \(error.userInfo)")
-        }
-        
-        return currentEntry
-    }
-
-    private func createNewEntryFor(category: NSManagedObject, inContext context: NSManagedObjectContext) -> NSManagedObject {
-        let entity = NSEntityDescription.entity(forEntityName: FOOD_TRACKER_ENTRY, in: context)
-        
-        let entry = NSManagedObject(entity: entity!, insertInto: context)
-        
-        let today = Date()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd.mm.yyyy"
-        let resultDate = formatter.string(from: today)
-        
-        entry.setValue(resultDate, forKey: "date")
-        entry.setValue(NSNumber(integerLiteral: 0), forKey: "value")
-        entry.setValue(category, forKey: "category")
-        
-        do {
-            try context.save()
-        } catch _ as NSError {
-            sendAlert(message: "There was an error creating an entry for today.")
-        }
-        
-        return entry
     }
     
     private func sendAlert(message: String) {

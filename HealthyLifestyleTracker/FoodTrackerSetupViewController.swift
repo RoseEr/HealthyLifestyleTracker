@@ -11,13 +11,13 @@ import CoreData
 
 class FoodTrackerSetupViewController: UIViewController, UITextFieldDelegate {
     
-    let FOOD_TRACKER_CATEGORY : String = "FoodTrackerCategory"
-    
     @IBOutlet weak var proteinTextField: UITextField!
     @IBOutlet weak var dairyTextField: UITextField!
     @IBOutlet weak var fruitsTextField: UITextField!
     @IBOutlet weak var vegetablesTextField: UITextField!
     @IBOutlet weak var fatsTextField: UITextField!
+    
+    let categoryDataAccessor = CategoryDataAccessor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,46 +38,35 @@ class FoodTrackerSetupViewController: UIViewController, UITextFieldDelegate {
         fatsTextField.delegate = self
     }
     
+    
+    
     @IBAction func Pressed(_ sender: UIButton) {
         if (!didUserEnterAllValues()) {
             sendAlert(message: "Please enter a value for all categories.")
         } else {
-            saveFoodTrackerCategory(name: "Protein", goal: proteinTextField.text!, helpText: "~100 calories/serving")
-            saveFoodTrackerCategory(name: "Dairy", goal: dairyTextField.text!, helpText: "~120 calories/serving")
-            saveFoodTrackerCategory(name: "Fruits", goal: fruitsTextField.text!, helpText: "~100 calories/serving")
-            saveFoodTrackerCategory(name: "Vegetables", goal: vegetablesTextField.text!, helpText: "~50 calories/serving")
-            saveFoodTrackerCategory(name: "Fats", goal: fatsTextField.text!, helpText: "~120 calories/serving")
+            saveFoodTrackerCategory(name: "Protein", goal: proteinTextField.text!, helpText: "~100 calories/serving", calorieValue: 100)
+            saveFoodTrackerCategory(name: "Dairy", goal: dairyTextField.text!, helpText: "~120 calories/serving", calorieValue: 120)
+            saveFoodTrackerCategory(name: "Fruits", goal: fruitsTextField.text!, helpText: "~100 calories/serving", calorieValue: 100)
+            saveFoodTrackerCategory(name: "Vegetables", goal: vegetablesTextField.text!, helpText: "~50 calories/serving", calorieValue: 50)
+            saveFoodTrackerCategory(name: "Fats", goal: fatsTextField.text!, helpText: "~120 calories/serving", calorieValue: 120)
         }
     }
     
-    private func saveFoodTrackerCategory(name: String, goal: String, helpText: String) {
+    private func saveFoodTrackerCategory(name: String, goal: String, helpText: String, calorieValue: Int) {
+        let category = Category()
         
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            sendAlert(message: "There was an error saving your values.")
-            return
+        if let dailyGoalIntValue = (NumberFormatter().number(from: goal)?.intValue) {
+            category.dailyGoal = dailyGoalIntValue
+        } else {
+            category.dailyGoal = 0
         }
         
-        guard let goalIntValue = NumberFormatter().number(from: goal)?.intValue else {
-            sendAlert(message: "There was an error saving your values.")
-            return
-        }
+        category.name = name
+        category.helpText = helpText
+        category.maxValue = 10
+        category.calorieValue = calorieValue
         
-        let managedContext = appDelegate.persistentContainer.viewContext
-        
-        let entity = NSEntityDescription.entity(forEntityName: FOOD_TRACKER_CATEGORY, in: managedContext)
-        
-        let category = NSManagedObject(entity: entity!, insertInto: managedContext)
-        
-        category.setValue(name, forKey: "name")
-        category.setValue(goalIntValue, forKey: "dailyGoal")
-        category.setValue(helpText, forKey: "helpText")
-        category.setValue(10, forKey: "maxValue")
-        
-        do {
-            try managedContext.save()
-        } catch _ as NSError {
-            sendAlert(message: "There was an error saving your values.")
-        }
+        self.categoryDataAccessor.addCategory(category: category)
     }
     
     private func didUserEnterAllValues() -> Bool {
