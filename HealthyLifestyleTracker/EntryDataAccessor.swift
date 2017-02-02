@@ -122,7 +122,7 @@ class EntryDataAccessor: NSObject {
         
         let today = Date()
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd.mm.yyyy"
+        formatter.dateFormat = "dd.MM.yyyy"
         let resultDate = formatter.string(from: today)
         
         entry.setValue(resultDate, forKey: "date")

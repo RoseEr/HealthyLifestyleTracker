@@ -76,12 +76,18 @@ class FoodTrackerCollectionViewCell: UICollectionViewCell {
         self.contentView.addSubview(self.label)
         self.contentView.addSubview(self.rightSideView)
         self.contentView.addSubview(self.leftSideView)
-        
-        self.setupConstraints()
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        self.setupConstraints()
     }
     
     private func setupConstraints() {
@@ -106,10 +112,4 @@ class FoodTrackerCollectionViewCell: UICollectionViewCell {
         
         NSLayoutConstraint.activate([labelWidthConstraint, labelHeightConstraint, labelXConstraint, labelYConstraint, leftSideViewWidthConstraint, leftSideViewHeightConstraint, leftSideViewXConstraint, leftSideViewYConstraint, rightSideViewWidthConstraint, rightSideViewHeightConstraint, rightSideViewXConstraint, rightSideViewYConstraint])
     }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
 }

@@ -132,6 +132,27 @@
 		AE9D30241E10307500E4AE1D /* FoodTrackerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9D30201E10307500E4AE1D /* FoodTrackerViewController.xib */; };
 		AE9D30251E10307500E4AE1D /* FoodTrackerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9D30201E10307500E4AE1D /* FoodTrackerViewController.xib */; };
 		AE9D30261E10307500E4AE1D /* FoodTrackerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9D30201E10307500E4AE1D /* FoodTrackerViewController.xib */; };
+		AEAC431D1E3FC8DE003FB1DD /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC431C1E3FC8DE003FB1DD /* EventsTableViewController.swift */; };
+		AEAC431E1E3FC8DE003FB1DD /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC431C1E3FC8DE003FB1DD /* EventsTableViewController.swift */; };
+		AEAC431F1E3FC8DE003FB1DD /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC431C1E3FC8DE003FB1DD /* EventsTableViewController.swift */; };
+		AEAC43211E3FCA8F003FB1DD /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC43201E3FCA8F003FB1DD /* CalendarEvent.swift */; };
+		AEAC43221E3FCA8F003FB1DD /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC43201E3FCA8F003FB1DD /* CalendarEvent.swift */; };
+		AEAC43231E3FCA8F003FB1DD /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC43201E3FCA8F003FB1DD /* CalendarEvent.swift */; };
+		AEAC43251E3FCBA9003FB1DD /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC43241E3FCBA9003FB1DD /* EventsTableViewCell.swift */; };
+		AEAC43261E3FCBA9003FB1DD /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC43241E3FCBA9003FB1DD /* EventsTableViewCell.swift */; };
+		AEAC43271E3FCBA9003FB1DD /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC43241E3FCBA9003FB1DD /* EventsTableViewCell.swift */; };
+		AEAC43301E3FDE52003FB1DD /* CalorieTrackingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC432F1E3FDE52003FB1DD /* CalorieTrackingTableViewCell.swift */; };
+		AEAC43311E3FDE52003FB1DD /* CalorieTrackingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC432F1E3FDE52003FB1DD /* CalorieTrackingTableViewCell.swift */; };
+		AEAC43321E3FDE52003FB1DD /* CalorieTrackingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC432F1E3FDE52003FB1DD /* CalorieTrackingTableViewCell.swift */; };
+		AEAC43341E3FDE64003FB1DD /* WorkoutTrackingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC43331E3FDE64003FB1DD /* WorkoutTrackingTableViewCell.swift */; };
+		AEAC43351E3FDE64003FB1DD /* WorkoutTrackingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC43331E3FDE64003FB1DD /* WorkoutTrackingTableViewCell.swift */; };
+		AEAC43361E3FDE64003FB1DD /* WorkoutTrackingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC43331E3FDE64003FB1DD /* WorkoutTrackingTableViewCell.swift */; };
+		AEAC43391E3FE944003FB1DD /* calorieIconOrange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEAC43371E3FE944003FB1DD /* calorieIconOrange@2x.png */; };
+		AEAC433A1E3FE944003FB1DD /* calorieIconOrange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEAC43371E3FE944003FB1DD /* calorieIconOrange@2x.png */; };
+		AEAC433B1E3FE944003FB1DD /* calorieIconOrange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEAC43371E3FE944003FB1DD /* calorieIconOrange@2x.png */; };
+		AEAC433C1E3FE944003FB1DD /* calorieIconOrange.png in Resources */ = {isa = PBXBuildFile; fileRef = AEAC43381E3FE944003FB1DD /* calorieIconOrange.png */; };
+		AEAC433D1E3FE944003FB1DD /* calorieIconOrange.png in Resources */ = {isa = PBXBuildFile; fileRef = AEAC43381E3FE944003FB1DD /* calorieIconOrange.png */; };
+		AEAC433E1E3FE944003FB1DD /* calorieIconOrange.png in Resources */ = {isa = PBXBuildFile; fileRef = AEAC43381E3FE944003FB1DD /* calorieIconOrange.png */; };
 		AEB808E61E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB808E41E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift */; };
 		AEB808E71E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB808E41E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift */; };
 		AEB808E81E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB808E41E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift */; };
@@ -201,9 +222,9 @@
 		AE4342511E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyLifestyleTrackerUITests.swift; sourceTree = "<group>"; };
 		AE4342531E0ED8C3000BAD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE697B011E3BA491008733A4 /* FoodTrackerHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTrackerHeaderViewController.swift; sourceTree = "<group>"; };
-		AE6A67551E3CF68C001B68EA /* HealthyLifestyleTracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthyLifestyleTracker-Bridging-Header.h"; sourceTree = "<group>"; };
-		AE6A67561E3CF68C001B68EA /* HealthyLifestyleTrackerTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthyLifestyleTrackerTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		AE6A67571E3CF68C001B68EA /* HealthyLifestyleTrackerUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthyLifestyleTrackerUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE6A67551E3CF68C001B68EA /* HealthyLifestyleTracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthyLifestyleTracker-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		AE6A67561E3CF68C001B68EA /* HealthyLifestyleTrackerTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthyLifestyleTrackerTests-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		AE6A67571E3CF68C001B68EA /* HealthyLifestyleTrackerUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthyLifestyleTrackerUITests-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		AE6A67581E3CF68C001B68EA /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
 		AE6A67591E3CF68C001B68EA /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
 		AE6A675A1E3CF68C001B68EA /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
@@ -242,6 +263,13 @@
 		AE9D30171E102F2000E4AE1D /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		AE9D301F1E10307500E4AE1D /* FoodTrackerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTrackerViewController.swift; sourceTree = "<group>"; };
 		AE9D30201E10307500E4AE1D /* FoodTrackerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTrackerViewController.xib; sourceTree = "<group>"; };
+		AEAC431C1E3FC8DE003FB1DD /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		AEAC43201E3FCA8F003FB1DD /* CalendarEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
+		AEAC43241E3FCBA9003FB1DD /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		AEAC432F1E3FDE52003FB1DD /* CalorieTrackingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalorieTrackingTableViewCell.swift; sourceTree = "<group>"; };
+		AEAC43331E3FDE64003FB1DD /* WorkoutTrackingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutTrackingTableViewCell.swift; sourceTree = "<group>"; };
+		AEAC43371E3FE944003FB1DD /* calorieIconOrange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calorieIconOrange@2x.png"; sourceTree = "<group>"; };
+		AEAC43381E3FE944003FB1DD /* calorieIconOrange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calorieIconOrange.png; sourceTree = "<group>"; };
 		AEB808E41E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTrackerHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		AEB808E51E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTrackerHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		AED90BA81E3141F100882C4A /* FoodTrackerSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTrackerSetupViewController.swift; sourceTree = "<group>"; };
@@ -284,9 +312,6 @@
 				AE4342451E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests */,
 				AE4342501E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests */,
 				AE43422C1E0ED8C2000BAD5F /* Products */,
-				AE6A67551E3CF68C001B68EA /* HealthyLifestyleTracker-Bridging-Header.h */,
-				AE6A67561E3CF68C001B68EA /* HealthyLifestyleTrackerTests-Bridging-Header.h */,
-				AE6A67571E3CF68C001B68EA /* HealthyLifestyleTrackerUITests-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -303,17 +328,10 @@
 		AE43422D1E0ED8C2000BAD5F /* HealthyLifestyleTracker */ = {
 			isa = PBXGroup;
 			children = (
-				AED90BA71E3141D100882C4A /* FoodTracker */,
+				AEAC432E1E3FCC25003FB1DD /* MainTabBar */,
+				AEAC432C1E3FCC0E003FB1DD /* Model */,
+				AEAC432A1E3FCBE2003FB1DD /* SupportingFiles */,
 				AE43422E1E0ED8C2000BAD5F /* AppDelegate.swift */,
-				AE4342381E0ED8C2000BAD5F /* Assets.xcassets */,
-				AE43423D1E0ED8C2000BAD5F /* Info.plist */,
-				AE4342351E0ED8C2000BAD5F /* HealthyLifestyleTracker.xcdatamodeld */,
-				AE9D30171E102F2000E4AE1D /* TabBarViewController.swift */,
-				AEE1DA3E1E1194EE00044961 /* WorkoutsViewController.swift */,
-				AEE1DA3F1E1194EE00044961 /* WorkoutsViewController.xib */,
-				AE07A8C01E39310300FD063C /* EntryDataAccessor.swift */,
-				AE07A8C41E39314600FD063C /* CategoryDataAccessor.swift */,
-				AE6A67AC1E3CF6CA001B68EA /* CalendarViewController.swift */,
 			);
 			path = HealthyLifestyleTracker;
 			sourceTree = "<group>";
@@ -339,6 +357,8 @@
 		AE4342671E0EDBBE000BAD5F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AEAC43371E3FE944003FB1DD /* calorieIconOrange@2x.png */,
+				AEAC43381E3FE944003FB1DD /* calorieIconOrange.png */,
 				AE0E7D891E1AC1C900347CAA /* Food.png */,
 				AE0E7D8A1E1AC1C900347CAA /* Food@2x.png */,
 				AE0E7D8B1E1AC1C900347CAA /* FoodSelected.png */,
@@ -395,6 +415,77 @@
 			name = FSCalendar;
 			sourceTree = "<group>";
 		};
+		AEAC43281E3FCBBC003FB1DD /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				AEAC43291E3FCBCE003FB1DD /* EventsTable */,
+				AEAC43201E3FCA8F003FB1DD /* CalendarEvent.swift */,
+				AE6A67AC1E3CF6CA001B68EA /* CalendarViewController.swift */,
+			);
+			name = CalendarView;
+			sourceTree = "<group>";
+		};
+		AEAC43291E3FCBCE003FB1DD /* EventsTable */ = {
+			isa = PBXGroup;
+			children = (
+				AEAC431C1E3FC8DE003FB1DD /* EventsTableViewController.swift */,
+				AEAC43241E3FCBA9003FB1DD /* EventsTableViewCell.swift */,
+				AEAC432F1E3FDE52003FB1DD /* CalorieTrackingTableViewCell.swift */,
+				AEAC43331E3FDE64003FB1DD /* WorkoutTrackingTableViewCell.swift */,
+			);
+			name = EventsTable;
+			sourceTree = "<group>";
+		};
+		AEAC432A1E3FCBE2003FB1DD /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AE4342381E0ED8C2000BAD5F /* Assets.xcassets */,
+				AE43423D1E0ED8C2000BAD5F /* Info.plist */,
+				AE6A67551E3CF68C001B68EA /* HealthyLifestyleTracker-Bridging-Header.h */,
+				AE6A67561E3CF68C001B68EA /* HealthyLifestyleTrackerTests-Bridging-Header.h */,
+				AE6A67571E3CF68C001B68EA /* HealthyLifestyleTrackerUITests-Bridging-Header.h */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AEAC432B1E3FCBF9003FB1DD /* DataAccessors */ = {
+			isa = PBXGroup;
+			children = (
+				AE07A8C01E39310300FD063C /* EntryDataAccessor.swift */,
+				AE07A8C41E39314600FD063C /* CategoryDataAccessor.swift */,
+			);
+			name = DataAccessors;
+			sourceTree = "<group>";
+		};
+		AEAC432C1E3FCC0E003FB1DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE4342351E0ED8C2000BAD5F /* HealthyLifestyleTracker.xcdatamodeld */,
+				AEAC432B1E3FCBF9003FB1DD /* DataAccessors */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AEAC432D1E3FCC1A003FB1DD /* WorkoutsView */ = {
+			isa = PBXGroup;
+			children = (
+				AEE1DA3E1E1194EE00044961 /* WorkoutsViewController.swift */,
+				AEE1DA3F1E1194EE00044961 /* WorkoutsViewController.xib */,
+			);
+			name = WorkoutsView;
+			sourceTree = "<group>";
+		};
+		AEAC432E1E3FCC25003FB1DD /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AEAC432D1E3FCC1A003FB1DD /* WorkoutsView */,
+				AEAC43281E3FCBBC003FB1DD /* CalendarView */,
+				AED90BA71E3141D100882C4A /* FoodTrackerView */,
+				AE9D30171E102F2000E4AE1D /* TabBarViewController.swift */,
+			);
+			name = MainTabBar;
+			sourceTree = "<group>";
+		};
 		AED90B9E1E31186000882C4A /* FoodTrackerCollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,7 +499,7 @@
 			name = FoodTrackerCollectionView;
 			sourceTree = "<group>";
 		};
-		AED90BA71E3141D100882C4A /* FoodTracker */ = {
+		AED90BA71E3141D100882C4A /* FoodTrackerView */ = {
 			isa = PBXGroup;
 			children = (
 				AED90B9E1E31186000882C4A /* FoodTrackerCollectionView */,
@@ -418,7 +509,7 @@
 				AED90BA91E3141F100882C4A /* FoodTrackerSetupViewController.xib */,
 				AE697B011E3BA491008733A4 /* FoodTrackerHeaderViewController.swift */,
 			);
-			name = FoodTracker;
+			name = FoodTrackerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -537,6 +628,7 @@
 				AE0E7DA11E1AC25E00347CAA /* Calendar.png in Resources */,
 				AEB808E91E3291FD0068089C /* FoodTrackerHeaderCollectionReusableView.xib in Resources */,
 				AE0E7D961E1AC1C900347CAA /* FoodSelected@2x.png in Resources */,
+				AEAC433C1E3FE944003FB1DD /* calorieIconOrange.png in Resources */,
 				AE0E7D931E1AC1C900347CAA /* FoodSelected.png in Resources */,
 				AE0E7DAA1E1AC25E00347CAA /* CalendarSelected@2x.png in Resources */,
 				AE0E7DA71E1AC25E00347CAA /* CalendarSelected.png in Resources */,
@@ -545,6 +637,7 @@
 				AE0E7DAD1E1AC25E00347CAA /* Dumbbell.png in Resources */,
 				AE0E7DA41E1AC25E00347CAA /* Calendar@2x.png in Resources */,
 				AE0E7DB01E1AC25E00347CAA /* Dumbbell@2x.png in Resources */,
+				AEAC43391E3FE944003FB1DD /* calorieIconOrange@2x.png in Resources */,
 				AE0E7D8D1E1AC1C900347CAA /* Food.png in Resources */,
 				AED90BAD1E3141F100882C4A /* FoodTrackerSetupViewController.xib in Resources */,
 				AEE1DA431E1194EE00044961 /* WorkoutsViewController.xib in Resources */,
@@ -570,12 +663,14 @@
 				AE0E7DC31E1AC34A00347CAA /* FoodTrackerCollectionViewCell.xib in Resources */,
 				AE0E7DAE1E1AC25E00347CAA /* Dumbbell.png in Resources */,
 				AE0E7DB11E1AC25E00347CAA /* Dumbbell@2x.png in Resources */,
+				AEAC433D1E3FE944003FB1DD /* calorieIconOrange.png in Resources */,
 				AE0E7DB71E1AC25E00347CAA /* DumbbellSelected@2x.png in Resources */,
 				AE0E7DA51E1AC25E00347CAA /* Calendar@2x.png in Resources */,
 				AE0E7DA81E1AC25E00347CAA /* CalendarSelected.png in Resources */,
 				AE0E7DA21E1AC25E00347CAA /* Calendar.png in Resources */,
 				AE0E7DB41E1AC25E00347CAA /* DumbbellSelected.png in Resources */,
 				AE0E7DAB1E1AC25E00347CAA /* CalendarSelected@2x.png in Resources */,
+				AEAC433A1E3FE944003FB1DD /* calorieIconOrange@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,12 +690,14 @@
 				AE0E7DC41E1AC34A00347CAA /* FoodTrackerCollectionViewCell.xib in Resources */,
 				AE0E7DAF1E1AC25E00347CAA /* Dumbbell.png in Resources */,
 				AE0E7DB21E1AC25E00347CAA /* Dumbbell@2x.png in Resources */,
+				AEAC433E1E3FE944003FB1DD /* calorieIconOrange.png in Resources */,
 				AE0E7DB81E1AC25E00347CAA /* DumbbellSelected@2x.png in Resources */,
 				AE0E7DA61E1AC25E00347CAA /* Calendar@2x.png in Resources */,
 				AE0E7DA91E1AC25E00347CAA /* CalendarSelected.png in Resources */,
 				AE0E7DA31E1AC25E00347CAA /* Calendar.png in Resources */,
 				AE0E7DB51E1AC25E00347CAA /* DumbbellSelected.png in Resources */,
 				AE0E7DAC1E1AC25E00347CAA /* CalendarSelected@2x.png in Resources */,
+				AEAC433B1E3FE944003FB1DD /* calorieIconOrange@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,7 +718,11 @@
 				AE0E7DBF1E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift in Sources */,
 				AE6A67A61E3CF68C001B68EA /* FSCalendarWeekdayView.m in Sources */,
 				AE6A677F1E3CF68C001B68EA /* FSCalendarAppearance.m in Sources */,
+				AEAC43301E3FDE52003FB1DD /* CalorieTrackingTableViewCell.swift in Sources */,
+				AEAC43251E3FCBA9003FB1DD /* EventsTableViewCell.swift in Sources */,
+				AEAC43211E3FCA8F003FB1DD /* CalendarEvent.swift in Sources */,
 				AE6A67851E3CF68C001B68EA /* FSCalendarCell.m in Sources */,
+				AEAC431D1E3FC8DE003FB1DD /* EventsTableViewController.swift in Sources */,
 				AE6A678E1E3CF68C001B68EA /* FSCalendarConstants.m in Sources */,
 				AE6A67A31E3CF68C001B68EA /* FSCalendarTransitionCoordinator.m in Sources */,
 				AE6A67941E3CF68C001B68EA /* FSCalendarDelegationProxy.m in Sources */,
@@ -630,6 +731,7 @@
 				AE6C00ED1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */,
 				AE6A67971E3CF68C001B68EA /* FSCalendarExtensions.m in Sources */,
 				AE9D30211E10307500E4AE1D /* FoodTrackerViewController.swift in Sources */,
+				AEAC43341E3FDE64003FB1DD /* WorkoutTrackingTableViewCell.swift in Sources */,
 				AE697B021E3BA491008733A4 /* FoodTrackerHeaderViewController.swift in Sources */,
 				AE6A67911E3CF68C001B68EA /* FSCalendarDelegationFactory.m in Sources */,
 				AE4342371E0ED8C2000BAD5F /* HealthyLifestyleTracker.xcdatamodeld in Sources */,
@@ -658,7 +760,11 @@
 				AE4342471E0ED8C3000BAD5F /* HealthyLifestyleTrackerTests.swift in Sources */,
 				AE6A67A71E3CF68C001B68EA /* FSCalendarWeekdayView.m in Sources */,
 				AE6A67801E3CF68C001B68EA /* FSCalendarAppearance.m in Sources */,
+				AEAC43311E3FDE52003FB1DD /* CalorieTrackingTableViewCell.swift in Sources */,
+				AEAC43261E3FCBA9003FB1DD /* EventsTableViewCell.swift in Sources */,
+				AEAC43221E3FCA8F003FB1DD /* CalendarEvent.swift in Sources */,
 				AE6A67861E3CF68C001B68EA /* FSCalendarCell.m in Sources */,
+				AEAC431E1E3FC8DE003FB1DD /* EventsTableViewController.swift in Sources */,
 				AE6A678F1E3CF68C001B68EA /* FSCalendarConstants.m in Sources */,
 				AE6A67A41E3CF68C001B68EA /* FSCalendarTransitionCoordinator.m in Sources */,
 				AE6A67951E3CF68C001B68EA /* FSCalendarDelegationProxy.m in Sources */,
@@ -667,6 +773,7 @@
 				AE6C00EE1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */,
 				AE6A67981E3CF68C001B68EA /* FSCalendarExtensions.m in Sources */,
 				AE0E7DC01E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift in Sources */,
+				AEAC43351E3FDE64003FB1DD /* WorkoutTrackingTableViewCell.swift in Sources */,
 				AE697B031E3BA491008733A4 /* FoodTrackerHeaderViewController.swift in Sources */,
 				AE6A67921E3CF68C001B68EA /* FSCalendarDelegationFactory.m in Sources */,
 				AED90BA51E3125BF00882C4A /* AppDelegate.swift in Sources */,
@@ -695,7 +802,11 @@
 				AE4342521E0ED8C3000BAD5F /* HealthyLifestyleTrackerUITests.swift in Sources */,
 				AE6A67A81E3CF68C001B68EA /* FSCalendarWeekdayView.m in Sources */,
 				AE6A67811E3CF68C001B68EA /* FSCalendarAppearance.m in Sources */,
+				AEAC43321E3FDE52003FB1DD /* CalorieTrackingTableViewCell.swift in Sources */,
+				AEAC43271E3FCBA9003FB1DD /* EventsTableViewCell.swift in Sources */,
+				AEAC43231E3FCA8F003FB1DD /* CalendarEvent.swift in Sources */,
 				AE6A67871E3CF68C001B68EA /* FSCalendarCell.m in Sources */,
+				AEAC431F1E3FC8DE003FB1DD /* EventsTableViewController.swift in Sources */,
 				AE6A67901E3CF68C001B68EA /* FSCalendarConstants.m in Sources */,
 				AE6A67A51E3CF68C001B68EA /* FSCalendarTransitionCoordinator.m in Sources */,
 				AE6A67961E3CF68C001B68EA /* FSCalendarDelegationProxy.m in Sources */,
@@ -704,6 +815,7 @@
 				AE6C00EF1E369FA800B3F85A /* FoodTrackerLayout.swift in Sources */,
 				AE6A67991E3CF68C001B68EA /* FSCalendarExtensions.m in Sources */,
 				AE0E7DC11E1AC34A00347CAA /* FoodTrackerCollectionViewCell.swift in Sources */,
+				AEAC43361E3FDE64003FB1DD /* WorkoutTrackingTableViewCell.swift in Sources */,
 				AE697B041E3BA491008733A4 /* FoodTrackerHeaderViewController.swift in Sources */,
 				AE6A67931E3CF68C001B68EA /* FSCalendarDelegationFactory.m in Sources */,
 				AED90BA61E3125C000882C4A /* AppDelegate.swift in Sources */,
